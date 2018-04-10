@@ -1,0 +1,26 @@
+[
+  {
+    "model": "places.place",
+    "pk": 1,
+    "fields": {
+      "name": "Winterfell",
+      "region": "North"
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": 2,
+    "fields": {
+      "name": "King`s Landing",
+      "region": "South"
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": 3,
+    "fields": {
+      "name": "Runestone",
+      "region": "Mountains of the Moon"
+    }
+  }
+]

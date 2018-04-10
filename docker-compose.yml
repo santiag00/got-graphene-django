@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  got:
+    build: .
+    working_dir: /app
+    volumes:
+      - $PWD:/app
+    ports:
+      - "80:80"
