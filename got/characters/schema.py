@@ -3,8 +3,7 @@ from graphene_django.filter import DjangoFilterConnectionField
 from graphene_django.types import DjangoObjectType
 
 from got.characters.models import Character
-from got.loaders import get_data_loader
-from got.places.loaders import PlaceLoader
+from got.places.models import Place
 from got.places.schema import PlaceObject
 from got.seasons.models import Season
 from got.seasons.schema import SeasonObject
@@ -23,7 +22,7 @@ class CharacterObject(DjangoObjectType):
     seasons = List(SeasonObject, description="The seasons in which the character appears")
 
     def resolve_origin(self, info):
-        return get_data_loader(PlaceLoader, info.context).load(self.origin_id)
+        return Place.objects.get(id=self.origin_id)
 
     def resolve_seasons(self, info):
         return Season.objects.filter(character__id=self.id)
