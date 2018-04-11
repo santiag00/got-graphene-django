@@ -17,7 +17,7 @@ class CharacterObject(DjangoObjectType):
 
     first_name = String(description="The first name of the character")
     last_name = String(description="The last name of the character")
-    is_alive = Boolean(description="The last name of the character")
+    is_alive = Boolean(description="Whether the character is alive or not")
     origin = Field(PlaceObject, description="The place where the character was born")
     seasons = List(SeasonObject, description="The seasons in which the character appears")
 
