@@ -3,12 +3,12 @@
     "model": "characters.character",
     "pk": 1,
     "fields": {
-      "first_name": "Waymar",
-      "last_name": "Royce",
-      "is_alive": false,
-      "origin": 3,
+      "first_name": "Jon",
+      "last_name": "Snow",
+      "is_alive": true,
+      "origin": 1,
       "seasons": [
-        1
+        1, 2, 3, 4, 5, 6, 7
       ]
     }
   },
@@ -16,12 +16,12 @@
     "model": "characters.character",
     "pk": 2,
     "fields": {
-      "first_name": "Eddard",
-      "last_name": "Stark",
+      "first_name": "Joffrey",
+      "last_name": "Baratheon",
       "is_alive": false,
-      "origin": 1,
+      "origin": 2,
       "seasons": [
-        1
+        1, 2, 3, 4
       ]
     }
   },
@@ -29,12 +29,12 @@
     "model": "characters.character",
     "pk": 3,
     "fields": {
-      "first_name": "Joffrey",
-      "last_name": "Baratheon",
-      "is_alive": false,
-      "origin": 2,
+      "first_name": "Arya",
+      "last_name": "Stark",
+      "is_alive": true,
+      "origin": 1,
       "seasons": [
-        1, 2, 3
+        1, 2, 3, 4, 5, 6, 7
       ]
     }
   },
@@ -42,12 +42,12 @@
     "model": "characters.character",
     "pk": 4,
     "fields": {
-      "first_name": "Arya",
+      "first_name": "Eddard",
       "last_name": "Stark",
       "is_alive": false,
       "origin": 1,
       "seasons": [
-        1, 2, 3, 4, 5, 6, 7
+        1
       ]
     }
   }
