@@ -1,5 +1,5 @@
 image: gitpod/workspace-full
 
 tasks:
-  - command: python3 manage.py runserver 0.0.0.0:80
-    name: Django server
+  - init: pip3 install -r requirements.txt
+    command: python3 manage.py runserver 0.0.0.0:80
