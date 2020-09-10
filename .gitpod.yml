@@ -1,5 +1,8 @@
 image: gitpod/workspace-full
 
+ports:
+  - port: 8080
+
 tasks:
   - init: pip3 install -r requirements.txt
-    command: python3 manage.py runserver 0.0.0.0:80
+    command: python3 manage.py runserver 0.0.0.0:8080
