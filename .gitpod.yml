@@ -5,4 +5,8 @@ ports:
 
 tasks:
   - init: pip3 install -r requirements.txt
-    command: python3 manage.py runserver 0.0.0.0:8080
+    command: >
+      echo "from got.settings import *" > got/local_settings.py &&
+      echo "ALLOWED_HOSTS = ['*']" >> got/local_settings.py &&
+      export DJANGO_SETTINGS_MODULE=got.local_settings &&
+      python3 manage.py runserver 0.0.0.0:8080
