@@ -1,0 +1,5 @@
+image: gitpod/workspace-full
+
+tasks:
+  - command: python3 /app/manage.py runserver 0.0.0.0:80
+    name: Django server
